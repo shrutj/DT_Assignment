@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Thought</title>
+    <link rel="icon" type="image/a-icon" href="/DT-images/Logo-modified.png">
+</head>
+
+
+<!-- CSS file here-->
+
+<link rel="stylesheet" href="index.css">
+
+<body>
+     <!-- Navigation Bar starts here-->
+    <nav id="navi">
+        <div id="navi1">
+            <img id="navImg" src="/DT-images/Logo.png" style="border-radius: 50%;">
+            <h1 style="font-family: 'Arial Narrow';"> DEEP </h1>
+            <h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color:blue"> THOUGHT </h1>
+            <div id="navi2">
+                <img id="im1" src="/DT-images/Home-icon.png" href="#">
+                <img id="im2" src="/DT-images/Settings-icon.png" href="#">
+                <img id="im3" src="/DT-images/Notification-bell-icon.png" href="#">
+                <img id="im4" src="/DT-images/face-icon.png" href="#">
+                <div id="dots" style="margin-top: 12px; margin-right: 25px; cursor: pointer;" href="#"></div>
+            </div>
+        </div>
+    </nav>
+    <!-- Navigation Bar ends here-->
+    
+    <div style="margin-top: 90px;">
+
+        <!-- Collapsible sections-->
+
+        <!-- Left Collapsable sections--> 
+        <div id="mySidepanel1" class="sidepanel">
+            <button class="closebtn" onclick="closeNav()" >Journey Board<img src="/DT-images/Scroll-icon-2.png" id="im-scroll" style="position: relative; float: right;"></button>
+            <button class="closebtn1" onclick="closeNav()">
+                <p>
+                    <ul style="list-style-type: disc; padding-left: 15px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                        <li><b>Explore the world of management</b></li><br>
+                        <li>Technical Project Management</li>
+                        <li>Threadbuild</li>
+                        <li>Structure your pointers</li>
+                        <li>4SA Method</li>
+                    </ul>
+                </p>
+            </button>
+        </div>
+          
+        <button class="openbtn" onclick="openNav()"><img src="/DT-images/Scroll-icon.png" id="im-scroll"> </button>
+        <button class="openbtn1" onclick="openNav()"><img src="/DT-images/1-icon.png" id="l_icon"></button>
+
+        <!-- Right Collapsible Section-->
+
+        <div class="right-panel">
+                <button class="openbutn" onclick="openNav1()">
+                    <p>N</p>
+                    <p>O</p>
+                    <p>T</p>
+                    <p>I</p>
+                    <p>C</p>
+                    <p>E</p>
+                    <br>
+                    <p>B</p>
+                    <p>O</p>
+                    <p>A</p>
+                    <p>R</p>
+                    <p>D</p>
+                    <br>
+                </button>
+                
+            <div class="sidePanel1" id="mySidepanel2" >
+                <button id="cls-btn-1" class="closebutn" onclick="closeNav1()" >
+                    <h1>&times;</h1>
+                    <p>N</p>
+                    <p>O</p>
+                    <p>T</p>
+                    <p>I</p>
+                    <p>C</p>
+                    <p>E</p>
+                    <br>
+                    <p>B</p>
+                    <p>O</p>
+                    <p>A</p>
+                    <p>R</p>
+                    <p>D</p>
+                    <br>
+                </button>
+                <button id="cls-btn-2" class="closebutn1" onclick="closeNav1()"><h3>No notices to display!!</h3></button>    
+            </div> 
+        </div>
+
+        <!--Middle-main-section-->
+        
+        <div style="margin-left: 150px; margin-right: 150px; margin-top: 10px;">
+
+            <div style="display: flex; width: 100%;">
+                <h2 style="color: blue; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Technical Project management</h2>
+                <button type="button" style=" cursor: pointer; margin-left: auto; margin-top: auto; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: white; background-color: blue; border-style: solid; border-color: blue; height: 35px; border-radius: 10px;">Submit Task</button>
+            </div>
+
+            <div style="background-color: rgb(235, 234, 234);">
+                <h3 id="Task_title" style="padding: 10px; padding-bottom: 0px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"></h3>
+                <p id="Task_description" style="padding: 10px; padding-top: 0px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"></p>
+            </div>
+
+            <!-- Display Cards -->
+
+            <!-- Upper Cards-->
+
+            <div id="card" class="card">
+
+                
+                <!--Left card-->    
+                <div style="float: left;">
+                    <button type="button" class="collap-block-1"><span id="asset-Title-1"></span><img src="/DT-images/I-icon.png" style="height: 18px; width: 18px; border-radius: 50%; float: right;"></button>
+                    <div class="collap-content-1">
+                        <p style="padding: 0px 18px;"><b>Description: </b><span id="asset-Description-1" ></span></p>
+                        <iframe id="you-tube" src="" frameborder="0"></iframe>
+                    </div>
+                </div>
+    
+                <!--Right card-->
+                <div style="float: right;">
+                    <button type="button"class="collap-block-1"><span id="asset-Title-2"></span><img src="/DT-images/I-icon.png" style="height: 18px; width: 18px; border-radius: 50%; float: right;"></button>
+                    <div class="collap-content-1">
+                        <p style="padding: 0px 18px;"><b>Description: </b><span id="asset-Description-2" ></span></p>
+                        <div>
+
+                            <button onclick="closeThread('cls-thread')" style="cursor: pointer; width: 100%; height: 40px; text-align: left; background-color: rgb(249, 249, 236); border-color: rgb(203, 202, 202); border-width: 1px; border-style: solid; font-size: large;"><b>&and; &emsp; &emsp; &emsp; Thread A</b></button>
+                            <div id="cls-thread" >
+                                <div style="display: flex; font-size: small; height: 130px;">
+                                    <div style="padding: 20px; float: left;">
+                                        <div style="box-shadow: 5px 5px 10px  rgb(243, 241, 241); background-color: rgb(229, 228, 228); padding: 10px; height: 15px; width: 165px; border-top-left-radius: 10px; border-top-right-radius: 10px;">
+                                            <label for="sub-thread-1" style="display: inline-block ; font-family:Arial, Helvetica, sans-serif; ">Sub thread 1</label><br>
+                                            
+                                        </div>
+                                        <textarea id="sub-thread-1" style="height: 60px; width: 165px; padding: 10px; border-color: white; border-radius:10px; box-shadow: 0px 0px 10px  rgb(158, 157, 157); color: rgb(179, 178, 178);"> Enter text here</textarea>
+                                    </div>
+
+                                    <div style="padding: 20px; float: right; ">
+                                        <div style="box-shadow: 5px 5px 10px  rgb(243, 241, 241); background-color: rgb(229, 228, 228); padding: 10px; height: 15px; width: 165px; border-top-left-radius: 10px; border-top-right-radius: 10px;">
+                                            <label for="sub-thread-1" style="display: inline-block ; font-family:Arial, Helvetica, sans-serif; ">Sub Interpretation 1</label><br>
+                                            
+                                        </div>
+                                        <textarea id="sub-thread-1" style="height: 60px; width: 165px; padding: 10px; border-color: white; border-radius:10px; box-shadow: 0px 0px 10px  rgb(158, 157, 157); color: rgb(179, 178, 178);"> Enter text here</textarea>
+                                    </div>
+                                </div>
+
+                                <div style="display: flex; justify-content: right; padding: 20px 20px 10px; height:30px;">
+
+                                    <img src="/DT-images/Card-icon.png" style="height: 20px; margin-right: 10px;">
+                                    <select style="width: 100px; height: 20px; background-color: white; border-radius: 5px; border-color: white; box-shadow: 0px 0px 10px  rgb(187, 186, 186);">                                    
+                                        <option value="" disabled selected>Select Category</option>
+                                        <option value="">Option1</option>
+                                    </select>
+                                    <p>&nbsp; &nbsp;</p>
+                                    <select style="width: 100px; height: 20px; background-color: white; border-radius: 5px; border-color: white; box-shadow: 0px 0px 10px  rgb(187, 186, 186);">                                    
+                                        <option value="" disabled selected>Select Process</option>
+                                        <option value="">Option1</option>
+                                    </select>
+                                </div>
+
+                                <button style="margin-left: 20px; background-color: blue; width: 100px; height: 35px; border-color: blue; border-style: solid; border-radius: 8px; color: white;">+ Sub-thread</button>
+                                
+                                <div style="padding: 10px 20px; margin-right: 20px; ">
+                                    <div style="box-shadow: 5px 5px 10px  rgb(243, 241, 241); background-color: rgb(229, 228, 228); padding: 10px; height: 15px; width: 100%; border-top-left-radius: 10px; border-top-right-radius: 10px;">
+                                        <label for="sub-thread-1" style="display: inline-block ; font-family:Arial, Helvetica, sans-serif; ">Sub Interpretation 1</label><br>
+                                        
+                                    </div>
+                                    <textarea id="sub-thread-1" style=" right: 20px; height: 40px; width: 100%; padding: 10px; border-color: white; border-radius:10px; box-shadow: 0px 0px 10px  rgb(158, 157, 157); color: rgb(179, 178, 178);"> Enter text here</textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Right card end-->
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <!-- Lower cards-->
+            <div id="card1" class="card1" style="width: 100%; clear: both;">
+
+                <!--Left card-->
+                <div style="float: left;">
+                    <button type="button" class="collap-block-2"><span id="asset-Title-3"></span><img src="/DT-images/I-icon.png" style="height: 18px; width: 18px; border-radius: 50%; float: right;"></button>
+                    <div class="collap-content-1">
+                        <p style="padding: 0px 18px;"><b>Description: </b><span id="asset-Description-3" ></span></p>
+                        <div style="padding: 20px;">
+                            <label for="innerTitle">Title</label><br style="display: block; content:''; margin: 10px;">
+                            <input id="innerTitle" type="text" style="width: 100%; height: 35px; box-shadow: 0px 0px 10px  rgb(194, 194, 194); border-color: white; border-style: solid; border-radius: 5px;">
+                            <br><br>
+                            <label for="innerContent">Content</label><br style="display: block; content:''; margin: 10px;">
+                            <button for="innerContent" style="background-color: rgb(255, 255, 255); border:none; width: 100%; border-top-left-radius: 10px; border-top-right-radius: 10px; text-align: left; box-shadow: 0px 0px 10px  rgb(194, 194, 194); padding: 5px;">File &emsp; Edit &emsp; View &emsp; Format &emsp; Tools &emsp; Table &emsp; Help<br><br>
+                                <img src="/DT-images/Lowercards-leftCard-innerContent-icon.png" style="float: left; height:20px; width: 120px;">
+                                <select style="margin:0; float: left; height: 20px; margin-left: 12px; background-color: rgb(239, 239, 239); border: none;">
+                                    <option value="" disabled selected style="font-family: Arial, Helvetica, sans-serif;">Paragraph</option>
+                                </select>
+                                <b><div style="float: left; margin-left: 10px;">&hellip;</div></b>
+                            </button>
+                            <textarea style="width: 99%; height: 160px; box-shadow: 0px 0px 10px  rgb(194, 194, 194); border: none;"></textarea>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--Right card-->
+                <div style="float: right;">
+                    <button type="button"class="collap-block-2"><span id="asset-Title-4"></span><img src="/DT-images/I-icon.png" style="height: 18px; width: 18px; border-radius: 50%; float: right;"></button>
+                    <div class="collap-content-1">
+                        <p style="padding: 0px 18px;"><b>Description: </b><span id="asset-Description-4" ></span></p>
+                        <hr style="margin:0px;">
+                        <div style="padding: 0px 20px;">
+
+                            <button onclick="closeThread('innerText')" style="cursor: pointer; width: 100%; height: 40px; text-align: left; background-color: rgb(244, 244, 244); border: none; font-size: large;"><b>&and; &nbsp;</b> Introduction</button>
+                            <div id="innerText" style="padding: 8px 0px; ">
+                                <p style="margin: 15px 30px;">The 4SA Method, How to bring the idea into process?</p>
+                                <a href="#" style="margin: 15px 30px; float: right; color: rgb(87, 86, 86); text-decoration: none;">See more</a>
+                                
+                                <button onclick="closeThread('deeperText')" style="cursor: pointer; border-width: 0px; border-bottom-width: 1px; border-top-width: 1px; border-color: gray; width: 100%; height: 40px; text-align: left; background-color: rgb(244, 244, 244); font-size: large;"><b>&and; &emsp; Thread A</b></button>
+                                <div id="deeperText" style="padding: 8px 0px; ">
+                                    <p style="margin: 15px 30px;">How are you going to develop your strategy? Which method are you going to use to develop a strategy? What if the project is leanthy? </p>
+                                    <a href="#" style="margin: 15px 30px; float: right; color: rgb(87, 86, 86); text-decoration: none;">See more</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!--Right card end-->
+            </div>
+
+            
+
+        </div>
+    </div>
+</body>
+
+<script src="index.js"></script>
+
+</html>
